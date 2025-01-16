@@ -42,8 +42,22 @@ header .container{
     padding-left: 15px;
     margin: 0px auto;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 .page-header{
     padding: 23px 0 24px 0;
+    border-bottom: 1px solid #e7e9fc;
 }
 .logo{
     font-family: "Raleway", sans-serif;
@@ -54,6 +68,7 @@ header .container{
     text-transform: uppercase;
     color: #4D5AE5;
     display: flex;
+    margin-right: 76px;
 }
 .logo-color{
     color: #2e2f42;
@@ -62,13 +77,16 @@ header .container{
     display:flex ;
     font-weight: 500;
     letter-spacing: 0.02em;
+    align-items: center;
     color:#2e2f42;
 }
 .nav-list{
     display: flex;
+    gap: 40px;
 }
 .link{
     color: #2E2F42;
+    padding: 24px 0;
 }
 .page-nav .link:hover,
 .page-nav .link:focus{
@@ -76,13 +94,13 @@ header .container{
 }
 .contact{
     font-style: normal;
+   
     
 }
 .contact-list{
     display: flex;
     gap: 40px;
-  
-
+    padding-left: 335PX;
 }
 .contact-link{
     display: flex;
@@ -115,6 +133,7 @@ header .container{
     display: flex;
     justify-content: center;
     align-content: center;
+    max-width: 496px; 
     font-weight: 700;
     font-size:56px;
     text-align: center;
@@ -127,7 +146,7 @@ header .container{
 .order-button{
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     margin-top: 24px;
     border: none;
@@ -147,26 +166,18 @@ header .container{
 }
 
 /*2 Section*/
-.our-goal{
-    display: none;
-}
 .benefits{
-    padding-top: 60px;
-    padding-bottom: 125px;
+    padding: 120px 0px;
 }
 .benefit-list{
     display:flex;
     gap:24px;
 }
-.benefit-list-itemt{
-    
-    display: flex;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 0.02em;
-    line-height: 1.2;
-    color: #2E2F42;
-   
+.benefits-item{
+    width: calc((100% - 72px) / 4);
+}
+.benefits-title{
+    margin-bottom: 8px;
 }
 .strat{
     font-size: 16px;
@@ -177,6 +188,10 @@ header .container{
 
 /*3 Section*/
 
+.team{
+    background-color:#F4F4FD;
+    padding: 120px 0px;
+}
 .our-team{
     font-weight: 500;
     font-size: 36px;
@@ -191,14 +206,17 @@ header .container{
     display:flex;
     gap:24px;
 }
-.team{
-    background-color:#F4F4FD;
-    padding: 120px 0px;
-}
-.team-card{
+.team-item{
     text-align: center;
     padding-bottom: 32px ;
     background-color:#FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+}
+.team-item:first-child{
+    border-radius: 0px 0px 4px 4px;
+}
+.team-info{
+    padding: 32px 0px;
 }
 .team-name{
     font-weight: 500;
@@ -208,10 +226,12 @@ header .container{
     color: #2E2F42;   
     padding-top: 32px;
     margin-bottom: 8px;
+    text-align: center;
 }
 .occupation{
     font-size: 16px;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 /*4 Section*/
@@ -225,7 +245,14 @@ header .container{
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 48px;
-    
+}
+.portfolio-item:first-child{
+    width: calc((100% - 48px) / 3)
+}
+.portfolio-info{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .portfolio-title{
     font-weight: 700;
@@ -244,6 +271,7 @@ header .container{
     line-height: 1.2;
     color: #2E2F42;  
     padding:32px 0px 0px 16px;
+    margin-bottom: 8px
     /*border: 1px solid #E7E9FC;*/
      
 }
@@ -255,9 +283,10 @@ header .container{
 
 .footer{
     background-color: #2E2F42;
-    padding: 100px 0px 100px 16px ;
+    padding: 100px 0px;
 }
 .footer-logo{
+    display: inline-block;;
     font-family: "Raleway" ,sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -265,6 +294,7 @@ header .container{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    margin-bottom: 16px;
 }
 .footer-logo-color{
 
