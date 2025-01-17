@@ -29,7 +29,7 @@ body{
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     color: #434455;
     background-color:#ffffff;
 }
@@ -56,8 +56,11 @@ header .container{
     overflow: hidden;
   }
 .page-header{
-    padding: 23px 0 24px 0;
+    display: flex;
     border-bottom: 1px solid #e7e9fc;
+}
+.page-header .container{
+    padding: 24px 0px;
 }
 .logo{
     font-family: "Raleway", sans-serif;
@@ -93,14 +96,13 @@ header .container{
     color:#404BBF;
 }
 .contact{
+    display: flex;
     font-style: normal;
-   
-    
 }
-.contact-list{
+ .contact-list{
     display: flex;
     gap: 40px;
-    padding-left: 335PX;
+    margin-left: auto;
 }
 .contact-link{
     display: flex;
@@ -108,8 +110,10 @@ header .container{
     letter-spacing: 0.02em;
     line-height: 1.5;
     color: #434455;
+    margin-left: auto;
 }
-.contact .contact-link:hover, .contact .contact-link:focus{
+.contact .contact-link:hover, 
+.contact .contact-link:focus{
     color: #404BBF;
 }
 
@@ -119,7 +123,7 @@ header .container{
 .title-back{
     padding: 188px 0px;
     background-color:#2E2F42;
-    margin-bottom: 65px;
+    
 }
 .title-back .container{
     display: flex;
@@ -174,7 +178,7 @@ header .container{
     gap:24px;
 }
 .benefits-item{
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 74px) / 4);
 }
 .benefits-title{
     margin-bottom: 8px;
@@ -208,7 +212,6 @@ header .container{
 }
 .team-item{
     text-align: center;
-    padding-bottom: 32px ;
     background-color:#FFFFFF;
     border-radius: 0px 0px 4px 4px;
 }
@@ -224,7 +227,6 @@ header .container{
     letter-spacing: 0.02em;
     line-height: 1.2;
     color: #2E2F42;   
-    padding-top: 32px;
     margin-bottom: 8px;
     text-align: center;
 }
@@ -270,14 +272,12 @@ header .container{
     letter-spacing: 0.02em;
     line-height: 1.2;
     color: #2E2F42;  
-    padding:32px 0px 0px 16px;
     margin-bottom: 8px;
     /*border: 1px solid #E7E9FC;*/
      
 }
 .categor{
     letter-spacing: 0.02em;
-    padding:8px 0px 32px 16px
 }
 
 
@@ -297,16 +297,13 @@ header .container{
     margin-bottom: 16px;
 }
 .footer-logo-color{
-
     color: #F4F4FD;
     padding-left: ;
 }
 .footer-text{
     display: flex;
     width: 264px;
-    height: 72px;
-    padding-top: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
-}f
+}
