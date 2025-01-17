@@ -58,11 +58,12 @@ header .container{
 .page-header{
     display: flex;
     border-bottom: 1px solid #e7e9fc;
-    width: 1158px
-    padding: 0px 15px ;
+   
 }
 .page-header .container{
     padding: 24px 0px;
+    width: 1158px;
+    padding: 0px 15px;
 }
 .logo{
     font-family: "Raleway", sans-serif;
