@@ -58,6 +58,7 @@ header .container{
 .page-header{
     display: flex;
     border-bottom: 1px solid #e7e9fc;
+    padding: 24px 0px;
    
 }
 .page-header .container{
@@ -101,11 +102,11 @@ header .container{
 .contact{
     display: flex;
     font-style: normal;
+    margin-left: auto;
 }
  .contact-list{
     display: flex;
     gap: 40px;
-    margin-left: auto;
 }
 .contact-link{
     display: flex;
@@ -113,7 +114,7 @@ header .container{
     letter-spacing: 0.02em;
     line-height: 1.5;
     color: #434455;
-    margin-left: auto;
+   
 }
 .contact .contact-link:hover, 
 .contact .contact-link:focus{
